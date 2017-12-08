@@ -1,0 +1,23 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+clone_folder: C:\Git\NiceActionRepeater
+init:
+- cmd:
+before_build:
+- cmd: nuget restore
+build:
+  project: Amoenus.NiceActionRepeater
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
+before_package:
+- cmd:
+after_build:
+- cmd: nuget pack Amoenus.NiceActionRepeater\Package.nuspec -Version %appveyor_build_version%
+after_test:
+- cmd:
+artifacts:
+- path: '**\Amoenus.NiceActionRepeater*.nupkg'
+  name: packages

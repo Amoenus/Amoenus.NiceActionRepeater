@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<package>
+  <metadata>
+    <id>Amoenus.NiceActionRepeater</id>
+    <version>$version$</version>
+    <title>Amoenus Nice Enum Description</title>
+    <authors>Romans Pokrovskis</authors>
+    <owners></owners>
+    <description>
+      Extension method that allows to repeat same action specified number of times
+    </description>
+    <releaseNotes>
+      Code refactoring release
+    </releaseNotes>
+    <summary>
+      Extension method that allows to repeat same action specified number of times
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/Amoenus.NiceActionRepeater</projectUrl>
+    <iconUrl>https://github.com/Amoenus/Amoenus.NiceActionRepeater/blob/master/cc0-logo.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://unlicense.org/UNLICENSE</licenseUrl>
+    <copyright></copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="..\Amoenus.NiceActionRepeater\bin\Release\" target="lib\netstandard1.0" />
+  </files>
+</package>
