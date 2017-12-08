@@ -9,4 +9,8 @@
     <OutputPath>bin\Release\netstandard1.0\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.0\Amoenus.NiceActionRepeater.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
