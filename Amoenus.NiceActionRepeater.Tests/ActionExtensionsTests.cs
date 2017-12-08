@@ -8,9 +8,29 @@ namespace Amoenus.NiceActionRepeater.Tests
     public class ActionExtensionsTests
     {
         [Test]
+        public void RepeatAction_WhenNegative_ThrowsArgumentOutOfRangeException()
+        {
+            const int expectedCounter = -200;
+
+            Action actionToRepeat = () => { };
+
+            Assert.Throws<ArgumentOutOfRangeException>(() => actionToRepeat.RepeatAction(expectedCounter));
+        }
+
+        [Test]
+        public void RepeatAction_WhenNull_ThrowsNullReferenceException()
+        {
+            const int expectedCounter = 200;
+
+            Action actionToRepeat = null;
+
+            Assert.Throws<NullReferenceException>(() => actionToRepeat.RepeatAction(expectedCounter));
+        }
+
+        [Test]
         public void RepeatAction_WhenPositive_InvokesActionExpectedNumberOfTimes()
         {
-            int actualCounter = 0;
+            var actualCounter = 0;
             const int expectedCounter = 200;
 
             Action actionToRepeat = () => { actualCounter++; };
@@ -23,7 +43,7 @@ namespace Amoenus.NiceActionRepeater.Tests
         [Test]
         public void RepeatAction_WhenZero_InvokesActionExpectedNumberOfTimes()
         {
-            int actualCounter = 0;
+            var actualCounter = 0;
             const int expectedCounter = 0;
 
             Action actionToRepeat = () => { actualCounter++; };
@@ -31,28 +51,6 @@ namespace Amoenus.NiceActionRepeater.Tests
             actionToRepeat.RepeatAction(expectedCounter);
 
             expectedCounter.ShouldBeEquivalentTo(actualCounter);
-        }
-
-        [Test]
-        public void RepeatAction_WhenNegative_ThrowsArgumentOutOfRangeException()
-        {
-            int actualCounter = 0;
-            const int expectedCounter = -200;
-
-            Action actionToRepeat = () => { actualCounter++; };
-
-            Assert.Throws<ArgumentOutOfRangeException>(() => actionToRepeat.RepeatAction(expectedCounter));
-
-        }
-
-        [Test]
-        public void RepeatAction_WhenNull_ThrowsNullReferenceException()
-        {
-            const int expectedCounter = 200;
-
-            Action actionToRepeat = null;
-
-            Assert.Throws<NullReferenceException>(() => actionToRepeat.RepeatAction(expectedCounter));
         }
     }
 }
