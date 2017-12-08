@@ -16,6 +16,9 @@ before_package:
 - cmd:
 after_build:
 - cmd: nuget pack Amoenus.NiceActionRepeater\Package.nuspec -Version %appveyor_build_version%
+test:
+  assemblies:
+    - '**\*.tests.dll'
 after_test:
 - cmd:
 artifacts:
