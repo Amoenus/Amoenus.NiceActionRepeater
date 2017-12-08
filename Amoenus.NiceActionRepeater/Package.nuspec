@@ -4,14 +4,14 @@
   <metadata>
     <id>Amoenus.NiceActionRepeater</id>
     <version>$version$</version>
-    <title>Amoenus Nice Enum Description</title>
+    <title>Amoenus Nice Action Repeater</title>
     <authors>Romans Pokrovskis</authors>
     <owners></owners>
     <description>
       Extension method that allows to repeat same action specified number of times
     </description>
     <releaseNotes>
-      Code refactoring release
+      Initial publishing
     </releaseNotes>
     <summary>
       Extension method that allows to repeat same action specified number of times
@@ -28,6 +28,6 @@
     <tags></tags>
   </metadata>
   <files>
-    <file src="..\Amoenus.NiceActionRepeater\bin\Release\" target="lib\netstandard1.0" />
+    <file src="..\Amoenus.NiceActionRepeater\bin\Release\netstandard1.0\" target="lib\netstandard1.0" />
   </files>
 </package>
