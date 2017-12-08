@@ -11,8 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CC0-Logo.png = CC0-Logo.png
 		CONTRIBUTING.md = CONTRIBUTING.md
 		LICENSE.md = LICENSE.md
-		Amoenus.NiceActionRepeater\Package.nuspec = Amoenus.NiceActionRepeater\Package.nuspec
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amoenus.NiceActionRepeater.Tests", "Amoenus.NiceActionRepeater.Tests\Amoenus.NiceActionRepeater.Tests.csproj", "{32167282-C706-4C9A-8110-950291AC0682}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +25,10 @@ Global
 		{59099BD7-72F0-4D60-B839-3961619E4AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59099BD7-72F0-4D60-B839-3961619E4AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59099BD7-72F0-4D60-B839-3961619E4AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32167282-C706-4C9A-8110-950291AC0682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32167282-C706-4C9A-8110-950291AC0682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32167282-C706-4C9A-8110-950291AC0682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32167282-C706-4C9A-8110-950291AC0682}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

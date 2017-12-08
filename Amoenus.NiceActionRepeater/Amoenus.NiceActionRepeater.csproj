@@ -6,6 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard1.0\Amoenus.NiceActionRepeater.xml</DocumentationFile>
+    <OutputPath>bin\Release\netstandard1.0\</OutputPath>
   </PropertyGroup>
 
 </Project>
